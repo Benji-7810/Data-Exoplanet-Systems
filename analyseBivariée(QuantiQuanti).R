@@ -87,8 +87,6 @@ abline(mod, col = "red", lwd = 2)
 # 5. LES GÉANTES SONT-ELLES PLUS PROCHES
 #    OU PLUS LOIN DE LEUR ÉTOILE ?
 
-
-# On repart du data.frame complet
 # (et on définit les géantes : mass_jup >= 1 M_Jup par exemple)
 planetes$giant = NA
 planetes$giant[planetes$mass_jup >= 1]  = "Geante"
