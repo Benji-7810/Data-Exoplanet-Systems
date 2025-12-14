@@ -19,7 +19,7 @@ tab_quanti <- log(tab_quanti)
 library(FactoMineR)
 library(factoextra)
 
-res.tab_quanti = PCA(tab_quanti, graph = FALSE)
+res.tab_quanti = PCA(tab_quanti, graph = TRUE)
 fviz_eig(res.tab_quanti, addlabels = TRUE)
 fviz_pca_var(res.tab_quanti, col.var = "black")
 tab_quanti
@@ -61,7 +61,7 @@ res.ca$row$cos2
 
 ### years_class et methode detection
 
-data3 <- table(tab$year_class, tab$planet_type)d
+data3 <- table(tab$year_class, tab$planet_type)
 
 
 data3 <- as.matrix(data3) 
